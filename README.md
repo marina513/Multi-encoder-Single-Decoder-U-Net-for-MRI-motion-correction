@@ -2,7 +2,7 @@
 Abstract. Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique. However, it is significantly affected by the patient's motion due to the long acquisition time, resulting in a corrupted image that can affect the clinical diagnosis. Recent deep learning work has shown promising results in solving the motion-artifact problem. However, the produced results suffer from blurriness and missing structures hidden by the current slice artifacts. To address these issues, we developed a multi-encoder single-decoder U-Net. We incorporated current slice priors along with their high-frequency components into the network. By utilizing the high-frequency components, we ensure that the model retains them, resulting in less blurred output. Additionally, the priors help the model infer the hidden structures more effectively. We trained our model using simulated motion artifacts derived from real data, applying a loss function based on the Structural Similarity Index (SSIM). Our model significantly enhances both the SSIM and the Peak Signal-to-Noise Ratio (PSNR) in both quantitative and qualitative terms. Specifically, it improves the SSIM by 12.1%, surpassing the current state-of-the-art methods by 1.9%. Additionally, the PSNR is improved by 8.57%, which is 1.23% better than existing leading approaches.
 
 # prior-based architecture
-![prior-based]([http://url/to/img.png](https://github.com/marina513/Multi-encoder-Single-Decoder-U-Net-for-MRI-motion-correction/blob/main/prior-based.png))
+![prior-based](https://github.com/marina513/Multi-encoder-Single-Decoder-U-Net-for-MRI-motion-correction/blob/main/prior-based.png)
 
 # frequency-based architecture
-![frequency-based]([http://url/to/img.png](https://github.com/marina513/Multi-encoder-Single-Decoder-U-Net-for-MRI-motion-correction/blob/main/frequency-based.png))
+![frequency-based](https://github.com/marina513/Multi-encoder-Single-Decoder-U-Net-for-MRI-motion-correction/blob/main/frequency-based.png)
